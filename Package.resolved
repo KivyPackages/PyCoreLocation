@@ -1,0 +1,69 @@
+{
+  "originHash" : "84dbe0adff54d5ba5657740304bc97145d9486defce209906d8a68e03fbd9e74",
+  "pins" : [
+    {
+      "identity" : "cpython",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/py-swift/CPython",
+      "state" : {
+        "revision" : "9ad10a7373a7daac05c42e8a5b707836e2006068",
+        "version" : "313.8.3"
+      }
+    },
+    {
+      "identity" : "pathkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kylef/PathKit",
+      "state" : {
+        "revision" : "3bfd2737b700b9a36565a8c94f4ad2b050a5e574",
+        "version" : "1.0.1"
+      }
+    },
+    {
+      "identity" : "pyfilegenerator",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/py-swift/PyFileGenerator",
+      "state" : {
+        "revision" : "710e85ca53f2adf834b534b9459ee89f9c79db0a",
+        "version" : "0.0.9"
+      }
+    },
+    {
+      "identity" : "pyswiftkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/py-swift/PySwiftKit",
+      "state" : {
+        "revision" : "57da95de514658b44c589d669fca66a21b7c145d",
+        "version" : "313.1.2"
+      }
+    },
+    {
+      "identity" : "spectre",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kylef/Spectre.git",
+      "state" : {
+        "revision" : "26cc5e9ae0947092c7139ef7ba612e34646086c7",
+        "version" : "0.10.1"
+      }
+    },
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser",
+      "state" : {
+        "revision" : "c5d11a805e765f52ba34ec7284bd4fcd6ba68615",
+        "version" : "1.7.0"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-syntax.git",
+      "state" : {
+        "revision" : "f99ae8aa18f0cf0d53481901f88a0991dc3bd4a2",
+        "version" : "601.0.1"
+      }
+    }
+  ],
+  "version" : 3
+}
