@@ -13,7 +13,7 @@ import CoreLocation
     open var level: Int { get }
 
 """)
-extension CLFloor: @retroactive PySerializable {
+extension CLFloor: @retroactive PySerializable, @retroactive PyClassProtocol {
     
     public func pyPointer() -> PyPointer {
         Self.asPyPointer(self)

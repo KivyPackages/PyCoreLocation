@@ -17,7 +17,7 @@ import CoreLocation
 
     open var horizontalAccuracy: CLLocationAccuracy { get }
 """)
-extension CLVisit: @retroactive PySerializable {
+extension CLVisit: @retroactive PySerializable, @retroactive PyClassProtocol {
     public func pyPointer() -> PyPointer {
         Self.asPyPointer(self)
     }

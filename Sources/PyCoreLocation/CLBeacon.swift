@@ -35,7 +35,7 @@ import CoreLocation
     open var rssi: Int { get }
 """)
 @available(iOS 7.0, *)
-extension CLBeacon : @retroactive PySerializable {
+extension CLBeacon : @retroactive PySerializable, @retroactive PyClassProtocol {
     
     @PyProperty var id: String { uuid.uuidString }
     

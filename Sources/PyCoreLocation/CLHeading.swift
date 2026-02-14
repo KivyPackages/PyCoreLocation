@@ -23,7 +23,7 @@ import CoreLocation
 
     open var timestamp: Date { get }    
 """)
-extension CLHeading: @retroactive PySerializable {
+extension CLHeading: @retroactive PySerializable, @retroactive PyClassProtocol {
     public func pyPointer() -> PyPointer {
         Self.asPyPointer(self)
     }

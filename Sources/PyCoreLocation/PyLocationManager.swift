@@ -25,7 +25,7 @@ public final class PyLocationManager {
     }
     
     @PyMethod
-    public static func `default`() -> PyLocationManager { sharedInstance }
+    public static func shared() -> PyLocationManager { sharedInstance }
     
     @PyMethod
     public func add_callback(callback: PyPointer) throws {

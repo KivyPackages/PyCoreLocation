@@ -23,7 +23,7 @@ import CoreLocation
     @available(iOS 7.0, *)
     open var notifyOnExit: Bool
 """)
-extension CLRegion: @retroactive PySerializable {
+extension CLRegion: @retroactive PySerializable, @retroactive PyClassProtocol {
     public func pyPointer() -> PyPointer {
         Self.asPyPointer(self)
     }

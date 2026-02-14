@@ -34,7 +34,7 @@ import CoreLocation
 
     public init(latitude: CLLocationDegrees, longitude: CLLocationDegrees)
 """)
-extension CLLocation: @retroactive PySerializable {
+extension CLLocation: @retroactive PySerializable, @retroactive PyClassProtocol {
     
     public func pyPointer() -> PyPointer {
         Self.asPyPointer(self)

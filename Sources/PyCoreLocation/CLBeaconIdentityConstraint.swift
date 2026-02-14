@@ -16,7 +16,7 @@ import CoreLocation
 
     public var minor: UInt16? { get }
 """)
-extension CLBeaconIdentityConstraint: @retroactive PySerializable {
+extension CLBeaconIdentityConstraint: @retroactive PySerializable, @retroactive PyClassProtocol {
     
     public func pyPointer() -> PyPointer {
         Self.asPyPointer(self)

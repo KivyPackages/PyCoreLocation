@@ -6,12 +6,6 @@ import PySerializing
 import CoreLocation
 
 
-extension CLLocation {
-    
-}
-
-
-
 func test() {
     //CLBeaconIdentityConstraint(uuid: UUID)
     
@@ -22,6 +16,14 @@ func test() {
 @PyModule
 struct PyCoreLocation: PyModuleProtocol {
     static let py_classes: [any (PyClassProtocol & AnyObject).Type] = [
+        CLBeacon.self,
+        CLBeaconIdentityConstraint.self,
+        CLFloor.self,
+        CLHeading.self,
+        CLLocation.self,
+        CLRegion.self,
+        CLVisit.self,
+        PyLocationManager.self
         
     ]
 }
