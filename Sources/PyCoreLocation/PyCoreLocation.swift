@@ -26,4 +26,20 @@ struct PyCoreLocation: PyModuleProtocol {
         PyLocationManager.self
         
     ]
+    
+    static var pyserializableTypes: [(PySerializable.Type, String)] = [
+        (CLAuthorizationStatus.self, "int"),
+        (CLActivityType.self, "int"),
+        (CLRegionState.self, "int"),
+        (CLProximity.self, "int"),
+        (CLDeviceOrientation.self, "int"),
+        
+        (CLLocationDistance.self, "float"),
+        (CLLocationAccuracy.self, "float"),
+        (CLLocationDirection.self, "float"),
+        (CLLocationSpeed.self, "float"),
+        (CLLocationSpeedAccuracy.self, "float"),
+        
+        (CLLocationCoordinate2D.self, "tuple[float, float]"),
+    ]
 }

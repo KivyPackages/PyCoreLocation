@@ -10,6 +10,19 @@ import CoreLocation
 
 
 @PyClassByExtension(expr: """
+
+    public typealias CLLocationDegrees = Double
+
+    public typealias CLLocationAccuracy = Double
+
+    public typealias CLLocationSpeed = Double
+
+    public typealias CLLocationSpeedAccuracy = Double
+
+    public typealias CLLocationDirection = Double
+
+    public typealias CLLocationDirectionAccuracy = Double
+
     open var coordinate: CLLocationCoordinate2D { get }
 
     open var altitude: CLLocationDistance { get }
@@ -39,4 +52,10 @@ extension CLLocation: @retroactive PySerializable, @retroactive PyClassProtocol 
     public func pyPointer() -> PyPointer {
         Self.asPyPointer(self)
     }
+}
+
+
+fileprivate func tests() {
+    CLLocationDegrees
+    CLLocationSpeedAccuracy
 }

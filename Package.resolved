@@ -1,5 +1,5 @@
 {
-  "originHash" : "84dbe0adff54d5ba5657740304bc97145d9486defce209906d8a68e03fbd9e74",
+  "originHash" : "9fec984f2e756dd634cf427a9c182d42b16b9e38e89f302fc797f1b67d2049d2",
   "pins" : [
     {
       "identity" : "cpython",
@@ -20,12 +20,12 @@
       }
     },
     {
-      "identity" : "pyfilegenerator",
+      "identity" : "pyswiftast",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/py-swift/PyFileGenerator",
+      "location" : "https://github.com/Py-Swift/PySwiftAST",
       "state" : {
-        "revision" : "710e85ca53f2adf834b534b9459ee89f9c79db0a",
-        "version" : "0.0.9"
+        "branch" : "master",
+        "revision" : "9c6af68882d5d9f352bbba7b60baa16b717b0219"
       }
     },
     {
@@ -47,12 +47,30 @@
       }
     },
     {
+      "identity" : "swift-algorithms",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-algorithms",
+      "state" : {
+        "revision" : "87e50f483c54e6efd60e885f7f5aa946cee68023",
+        "version" : "1.2.1"
+      }
+    },
+    {
       "identity" : "swift-argument-parser",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-argument-parser",
       "state" : {
         "revision" : "c5d11a805e765f52ba34ec7284bd4fcd6ba68615",
         "version" : "1.7.0"
+      }
+    },
+    {
+      "identity" : "swift-numerics",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-numerics.git",
+      "state" : {
+        "revision" : "0c0290ff6b24942dadb83a929ffaaa1481df04a2",
+        "version" : "1.1.1"
       }
     },
     {

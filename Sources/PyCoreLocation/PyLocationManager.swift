@@ -212,21 +212,6 @@ public final class PyLocationManager {
     @PyMethod
     public func stopRangingBeacons(satisfying constraint: CLBeaconIdentityConstraint) { manager.stopRangingBeacons(satisfying: constraint) }
     
-}
-
-extension PyLocationManager: PySerializable {
-    
-    public func pyPointer() -> PyPointer {
-        if let pyInstance { return Py_NewRef(pyInstance) }
-        // adding PyLocationManager as weak ref in the PyInstance, but always passing same py ref.
-        // how keep a singleton in PySwiftKit in general
-        let new = Self.asPyPointer(unretained: self)
-        pyInstance = new
-        return Py_NewRef(pyInstance)
-    }
-}
-
-extension PyLocationManager {
     
     @PyContainer
     public final class Callbacks: NSObject {
@@ -267,6 +252,20 @@ extension PyLocationManager {
         
     }
 }
+
+extension PyLocationManager: PySerializable {
+    
+    public func pyPointer() -> PyPointer {
+        if let pyInstance { return Py_NewRef(pyInstance) }
+        // adding PyLocationManager as weak ref in the PyInstance, but always passing same py ref.
+        // how keep a singleton in PySwiftKit in general
+        let new = Self.asPyPointer(unretained: self)
+        pyInstance = new
+        return Py_NewRef(pyInstance)
+    }
+}
+
+
 
 extension PyLocationManager.Callbacks: CLLocationManagerDelegate {
     public func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
