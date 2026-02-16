@@ -56,6 +56,6 @@ extension CLLocation: @retroactive PySerializable, @retroactive PyClassProtocol 
 
 
 fileprivate func tests() {
-    CLLocationDegrees
-    CLLocationSpeedAccuracy
+//    CLLocationDegrees
+//    CLLocationSpeedAccuracy
 }
